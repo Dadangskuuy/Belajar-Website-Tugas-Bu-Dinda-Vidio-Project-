@@ -1,0 +1,166 @@
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+body > main {
+    flex: 1; /* Isi ruang di antara header dan footer */
+}
+
+body {
+    background-color: #333333;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
+nav {
+    background-color: #222222;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 1rem 2rem;
+    gap: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    align-items: center;
+    gap: 1rem;
+    gap: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1abc9c;
+    font-weight: 600;
+    padding: 8px 0;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid  #2c3e5000;
+}
+
+.logo-smkn-6 img {
+    width: 55px;
+    height: auto;
+}
+
+nav ul li a:hover {
+    color:  #2c3e50;
+    border-bottom: 1px solid  #2c3e50;
+}
+
+.social-top-right {
+    position: absolute;
+    right: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    z-index: 1000;
+    color: #1abc9c;
+}
+
+.social-top-right a {
+    color: #1abc9c;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-top-right a:hover {
+    color: #ffffff;
+}
+.sosialicons {
+    margin-bottom: 1rem;
+}
+
+.sosialicons a {
+    color: #1abc9c;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.sosialicons a:hover {
+    color: #ffffff;
+}
+
+header {
+  background-color: #6200ea;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 2rem 2rem;
+  }
+
+.card {
+    width: 320px;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s;
+    text-decoration: none;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  .overlay {
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .overlay h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #eeeeee;
+  font-size: 0.9rem;
+}

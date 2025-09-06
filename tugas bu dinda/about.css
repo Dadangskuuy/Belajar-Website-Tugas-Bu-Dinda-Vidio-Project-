@@ -1,0 +1,224 @@
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+body > main {
+    flex: 1; /* Isi ruang di antara header dan footer */
+}
+
+body {
+    background-color: #333333;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
+nav {
+    background-color: #222222;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 1rem 2rem;
+    gap: 2rem;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    align-items: center;
+    gap: 1rem;
+    gap: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1abc9c;
+    font-weight: 600;
+    padding: 8px 0;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid  #2c3e5000;
+}
+
+.logo-smkn-6 img {
+    width: 55px;
+    height: auto;
+}
+
+nav ul li a:hover {
+    color:  #2c3e50;
+    border-bottom: 1px solid  #2c3e50;
+}
+
+.social-top-right {
+    position: absolute;
+    right: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    z-index: 1000;
+    color: #1abc9c;
+}
+
+.social-top-right a {
+    color: #1abc9c;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-top-right a:hover {
+    color: #ffffff;
+}
+.sosialicons {
+    margin-bottom: 1rem;
+}
+
+.sosialicons a {
+    color: #1abc9c;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.sosialicons a:hover {
+    color: #ffffff;
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+  }
+  
+.about-me img {
+    height: 200px;
+    width: 200px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    margin-top: 60px;
+  }
+
+.img {
+    display: block;
+    margin: 0 auto;
+  }
+
+.wrapper {
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('img/ywach.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+  
+.testimonial {
+    padding: 3x;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+article {
+    font-size: 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+    animation: fadeinup 1s ease-out both;
+}
+
+article {
+    animation: fadeInUp 1s ease-out both;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+article h1:after{
+    content: '';
+    display: block;
+    width: 225px;
+    height: 5px;
+    background-color: #00000009;
+    margin: auto;
+    letter-spacing: 1.5px;
+}
+
+blockquote {
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+article h5 {
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-top: 30px;
+    letter-spacing: 1.5px;
+}
+
+article p {
+    font-size: 15px;
+}
+
+.about-me img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-me img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 24px;
+    background-color: #1abc9c;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #16a085;
+}
+
+

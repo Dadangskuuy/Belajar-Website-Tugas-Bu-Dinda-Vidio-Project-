@@ -1,0 +1,181 @@
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+body > main {
+    flex: 1; /* Isi ruang di antara header dan footer */
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 1rem 2rem;
+    gap: 2rem;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    align-items: center;
+    gap: 1rem;
+    gap: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(53, 53, 167);
+    font-weight: 600;
+    padding: 8px 0;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid  #2c3e5000;
+}
+
+nav div img {
+    width: 100px;
+}
+
+nav ul li a:hover {
+    color:  #2c3e50;
+    border-bottom: 1px solid  #2c3e50;
+}
+
+.social-top-right {
+    position: absolute;
+    right: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    z-index: 1000;
+}
+
+.social-top-right a {
+    color: rgb(53, 53, 167);
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-top-right a:hover {
+    color: #ffffff;
+}
+
+.footer {
+    background-color: #111;
+    color: #ccc;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+.footer a {
+    color: #1abc9c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.logo-smkn-6  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-smkn-6 img {
+    width: 55px;
+    height: auto;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url("vid/Gif-Animated-Wallpaper-Background-Full-HD-Free-Download-for-PC-Macbook-261121-Wallpaperxyz.com-5.gif") no-repeat center center / cover;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    padding: 70px 10% 0;
+    flex-wrap: wrap;
+    background-attachment: fixed;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.home-content h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: -3px 0;
+}
+
+.home-content p {
+    font-size: 20px;
+}
+
+.home-section a {
+    display:  inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    font-size: 26px;
+    color: #333;
+    text-decoration: none;
+    margin: 20px 10px 20px 0;
+}
+
+.home-section a:hover {
+    background: #333;
+    color: #fff;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+}
+
+.btn-box {
+    display: inline-block;
+    padding: 12px 28px;
+    font-size: 16px;
+    color: #333;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
